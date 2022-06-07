@@ -1,0 +1,108 @@
+.login {
+  height: 100vh;
+  padding-top: 70px;
+}
+
+.login__container {
+  border: solid black;
+  border-radius: 5px;
+  height: 30em;
+  width: 30em;
+  margin: 6em auto;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.login__info__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.tittle {
+  text-transform: capitalize;
+  font-size: 2.25rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.social__login {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social__login__element {
+  width: 12.5rem;
+  height: 3.75rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__image {
+  width: 1.875rem;
+  height: 1.875rem;
+  position: relative;
+  top: 0;
+  left: -0.625rem;
+}
+
+.login__info__container > p {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.inputs__container {
+  height: 55%;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.input,
+.btn {
+  width: 90%;
+  height: 3.125rem;
+  font-size: 1em;
+}
+
+.input {
+  padding-left: 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+}
+
+.input:hover {
+  border: solid black;
+}
+
+.btn {
+  width: 80%;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: white;
+  border-radius: 5px;
+  background-color: black;
+}
+
+.inputs__container {
+  margin: 0;
+}
+
+.span {
+  font-weight: bold;
+}

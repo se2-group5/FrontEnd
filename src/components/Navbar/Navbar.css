@@ -3,7 +3,7 @@
   top: 0px;
   height: 70px;
   background-color: black;
-  opacity: 0.75;
+  opacity: 0.8;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,8 +14,9 @@
 
 .navbar__logo {
   color: white;
-  font-family: "Montez", cursive;
-  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Bad Script", cursive;
+  font-size: 1.5rem;
   text-decoration: none;
 }
 
@@ -29,9 +30,10 @@
 }
 
 .navbar__link {
-  font-size: 0.85rem;
+  font-size: 1rem;
   text-decoration: none;
   color: white;
+  font-weight: bold;
   text-align: center;
   padding: 10;
   margin: 0px 5px;
