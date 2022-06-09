@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Login.css";
 import { FcGoogle } from "react-icons/fc";
 import { BsFacebook } from "react-icons/bs";
 import { useForm } from "react-hook-form";
+import axios from "axios";
+import md5 from "md5";
+import Cookies from "universal-cookie";
+
+const baseURL = "http://localhost:3001/users";
+const cookies = new Cookies();
 
 function Login() {
   const {
@@ -11,9 +17,37 @@ function Login() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (evento) => {
-    console.log(evento);
+  const onSubmit = async (evento) => {
+    await axios
+      .get(baseURL, {
+        params: {
+          email: evento.email,
+          password: md5(evento.password),
+        },
+      })
+      .then((response) => {
+        return response.data;
+      })
+      .then((response) => {
+        if (response.length > 0) {
+          const userLogued = response[0];
+          cookies.set("id", userLogued.id, { path: "/" });
+          cookies.set("name", userLogued.name, { path: "/" });
+          window.location.href = "/establishments";
+        } else {
+          alert("El usuario o la contraseña son incorrectos");
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
+
+  useEffect(() => {
+    if (cookies.get("name")) {
+      window.location.href = "/establishments";
+    }
+  });
 
   return (
     <div className="login">
