@@ -21,6 +21,11 @@ function Navbar() {
         {!cookies.get("name") ? (
           <>
             <li className="navbar__item">
+              <Link className="navbar__link" to="/establishments">
+                Establecimientos
+              </Link>
+            </li>
+            <li className="navbar__item">
               <Link className="navbar__link" to="/login">
                 Ingresar
               </Link>
@@ -34,17 +39,19 @@ function Navbar() {
         ) : (
           <>
             <li className="navbar__item">
-              <span className="navbar__link">¡ {cookies.get("name")} !</span>
+              <Link className="navbar__link" to="/establishments">
+                {cookies.get("name")}
+              </Link>
             </li>
             <li className="navbar__item">
-              <button
+              <span
                 onClick={() => {
                   closeSesion();
                 }}
-                className="btn__link"
+                className="navbar__link"
               >
                 Cerrar Sesion
-              </button>
+              </span>
             </li>
           </>
         )}
