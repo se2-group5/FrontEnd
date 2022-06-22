@@ -7,7 +7,7 @@ import axios from "axios";
 import md5 from "md5";
 import Cookies from "universal-cookie";
 
-const baseURL = "http://localhost:3001/users";
+const baseURL = "http://localhost:8000/api/users";
 const cookies = new Cookies();
 
 function Login() {
@@ -32,7 +32,7 @@ function Login() {
         if (response.length > 0) {
           const userLogued = response[0];
           cookies.set("id", userLogued.id, { path: "/" });
-          cookies.set("name", userLogued.name, { path: "/" });
+          cookies.set("name", userLogued.username, { path: "/" });
           window.location.href = "/establishments";
         } else {
           alert("El usuario o la contraseña son incorrectos");
@@ -53,7 +53,7 @@ function Login() {
     <div className="login">
       <div className="login__container">
         <div className="login__info__container">
-          <h1 className="tittle">log in with</h1>
+          <h1 className="tittle">Ingresar con</h1>
           <div className="social__login">
             <div className="social__login__element">
               <FcGoogle className="social__image" />

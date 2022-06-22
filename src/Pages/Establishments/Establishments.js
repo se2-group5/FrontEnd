@@ -1,9 +1,9 @@
-import React, { useEffect, useState, get } from "react";
+import React, { useEffect, useState } from "react";
 import Card from "./Card/Card";
 import axios from "axios";
 import "./Establishments.css";
 
-const baseURL = "http://localhost:3001/establishments";
+const baseURL = "http://localhost:8000/api/businesses";
 
 function Establisments() {
   const [establishments, setEstablishments] = useState();
@@ -25,7 +25,12 @@ function Establisments() {
         <div className="row">
           {establishments?.map((est) => (
             <div className="col-md-4" key={est.id}>
-              <Card name={est.name} img={est.img} />
+              <Card
+                id={est.id}
+                name={est.name}
+                img={est.img}
+                desc={est.description}
+              />
             </div>
           ))}
         </div>
