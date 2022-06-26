@@ -4,15 +4,17 @@ import "./Card.css";
 
 function Card({ id, name, img, desc }) {
   return (
-    <div className="card text-center ">
-      <div className="card-body ">
-        <img src={img} alt="" className="card-img-top" />
-        <h4 className="card-tittle">{name}</h4>
-        <p className="card-text text-secondary">{desc}</p>
-        <Link to={`/establishment/${id}`} className="btn btn-outline-secondary">
-          Ir al Establecimiento
-        </Link>
-      </div>
+    <div className="card">
+      <Link className="card__link" to={`/establishment/${id}`}>
+        <div className="card__container">
+          <div className="image__card">
+            <img src={img} alt="img__card" />
+          </div>
+          <div className="card__desc">
+            <p>{desc}</p>
+          </div>
+        </div>
+      </Link>
     </div>
   );
 }

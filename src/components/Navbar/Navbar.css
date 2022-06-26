@@ -1,18 +1,20 @@
 .navbar {
   position: sticky;
   top: 0px;
-  height: 70px;
+  height: 60px;
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.85;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 30px 0px 30px;
-  margin-bottom: -70px;
+  margin-bottom: -60px;
   z-index: 5;
+  align-items: center;
 }
 
 .navbar__logo {
+  padding-left: 2.5rem;
   color: white;
   font-weight: bold;
   font-family: "Bad Script", cursive;
@@ -20,9 +22,14 @@
   text-decoration: none;
 }
 
+.navbar__logo:hover {
+  color: #ff7261;
+}
+
 .navbar__list {
   display: flex;
   list-style: none;
+  padding-right: 2.5rem;
 }
 
 .navbar__item {
@@ -36,6 +43,7 @@
   border: none;
   color: white;
   font-weight: bold;
+
   text-align: center;
   padding: 10;
   margin: 0px 5px;
@@ -46,7 +54,12 @@
 }
 
 .navbar__link:hover {
-  border-color: white;
+  color: #ff7261;
+  border-color: #ff7261;
   transition: 250ms;
   cursor: pointer;
 }
+
+/* Salmón Saturado  #ff7261 */
+/* Inverso          #057f8d */
+/* Segundario       #b7c8cb */

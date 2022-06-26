@@ -1,4 +1,21 @@
 .establishments {
   height: 100vh;
   padding-top: 70px;
+  background: rgb(5, 127, 141);
+  background: linear-gradient(
+    336deg,
+    rgba(5, 127, 141, 1) 18%,
+    rgba(183, 200, 203, 1) 49%,
+    rgba(255, 114, 97, 1) 100%
+  );
+}
+
+.card {
+  max-width: 1200px;
+  padding: 20px;
+  padding-bottom: 40px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
 }

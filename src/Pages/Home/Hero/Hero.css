@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
+  background: salmon;
 }
 
 .hero__image {
@@ -13,9 +14,9 @@
 
 .hero__tittle {
   position: absolute;
-  bottom: 15%;
-  right: 10%;
+  bottom: 10%;
+  right: 7%;
   color: white;
-  font-size: 4rem;
-  padding: 15px;  
+  font-size: 7rem;
+  padding: 15px;
 }
