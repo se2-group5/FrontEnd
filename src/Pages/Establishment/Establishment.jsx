@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Statistics from "./Statistics/Statistics";
 import Report from "./Report/Report";
 import Cookies from "universal-cookie";
@@ -18,6 +19,7 @@ function Establishment() {
 
   const data = async () => {
     await axios.get(baseURL).then((response) => {
+      console.log(response.data);
       setEst(response.data);
     });
   };
@@ -52,6 +54,8 @@ function Establishment() {
             Dignissimos dicta, doloribus magnam suscipit molestiae totam rem
             quaerat nesciunt! Atque mollitia nam blanditiis amet.
           </p>
+          <h3 className="est__subtittle  cursive">Información</h3>
+          <p className="est__text">Info :3</p>
         </div>
         <div className="est__est">
           <h3 className="est_subtittle cursive"> Estadisticas</h3>
@@ -62,9 +66,9 @@ function Establishment() {
           {outVisible ? (
             <Report />
           ) : (
-            <span className="est__button">
-              Inicie sesion para realizar un reporte
-            </span>
+            <Link className="est__button" to="/login">
+              ¡ Inicie sesion para realizar un reporte !
+            </Link>
           )}
         </div>
       </div>

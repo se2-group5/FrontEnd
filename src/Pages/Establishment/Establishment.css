@@ -29,6 +29,7 @@
   margin: auto;
   margin-top: 40px;
   font-family: "Montez", cursive;
+  font-size: 3.5rem;
 }
 
 .est__subtittle {
@@ -63,4 +64,25 @@
 .cursive {
   font-family: "Montez", cursive;
   font-size: 2rem;
+}
+
+.est__button {
+  font-size: 1.3rem;
+  text-decoration: none;
+  background: none;
+  border: solid black;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-style: solid;
+  transition: 250ms;
+  margin-top: 20px;
+}
+
+.est__button:hover {
+  color: #ff7261;
+  transition: 250ms;
+  cursor: pointer;
 }
