@@ -23,7 +23,7 @@ function Establisments() {
 
   return (
     <div className="establishments">
-      <h2>Establecimientos</h2>
+      <h2 className="est__tittle">Establecimientos</h2>
 
       <div className="card">
         {establishments?.map((est) => (
