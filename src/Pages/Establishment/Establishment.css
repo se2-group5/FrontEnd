@@ -1,6 +1,7 @@
 .establishment {
   height: 100%;
-  padding-top: 100px;
+  padding-top: 125px;
+  padding-bottom: 100px;
   background: rgb(5, 127, 141);
   background: linear-gradient(
     336deg,
@@ -8,4 +9,58 @@
     rgba(183, 200, 203, 1) 49%,
     rgba(255, 114, 97, 1) 100%
   );
+  text-align: center;
+}
+
+.est__container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border: solid black;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.est__tittle {
+  border: solid black;
+  border-radius: 5px;
+  width: 50%;
+  margin: auto;
+  margin-top: 40px;
+  font-family: "Montez", cursive;
+}
+
+.est__subtittle {
+  text-align: left;
+}
+
+.est__desc {
+  width: 70%;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.est__est {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 30px;
+  border: solid black;
+  border-radius: 5px;
+}
+
+.est__rep {
+  padding-bottom: 30px;
+  width: 70%;
+  margin: auto;
+  border: solid black;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.cursive {
+  font-family: "Montez", cursive;
+  font-size: 2rem;
 }

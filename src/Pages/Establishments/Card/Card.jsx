@@ -4,7 +4,7 @@ import "./Card.css";
 
 function Card({ id, name, img, desc }) {
   return (
-    <Link className="card__container" to={`/establishment/${name}`}>
+    <Link className="card__container" to={`/establishment/${id}`}>
       <div className="image__card">
         <img src={img} alt="img__card" />
       </div>
