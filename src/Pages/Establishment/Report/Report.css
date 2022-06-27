@@ -6,6 +6,16 @@ hr {
   margin-bottom: 20px;
 }
 
+.report__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.report__info {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
 .rep__button {
   font-size: 1.3rem;
   text-decoration: none;

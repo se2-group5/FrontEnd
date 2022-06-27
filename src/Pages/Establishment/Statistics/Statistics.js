@@ -6,11 +6,11 @@ function Statistics({ est }) {
     <div className="statistics">
       <div className="stat__item">
         <h3>Calificación</h3>
-        <span>4.5</span>
+        <span>{est?.rating}</span>
       </div>
       <div className="stat__item">
         <h3>Internet</h3>
-        <span>4.5</span>
+        <span>{est?.internet_quality}</span>
       </div>
       <div className="stat__item">
         <h3>Capacidad</h3>

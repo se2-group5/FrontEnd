@@ -19,7 +19,6 @@ function Establishment() {
 
   const data = async () => {
     await axios.get(baseURL).then((response) => {
-      console.log(response.data);
       setEst(response.data);
     });
   };
@@ -54,8 +53,32 @@ function Establishment() {
             Dignissimos dicta, doloribus magnam suscipit molestiae totam rem
             quaerat nesciunt! Atque mollitia nam blanditiis amet.
           </p>
+        </div>
+        <div className="est__information">
           <h3 className="est__subtittle  cursive">Información</h3>
-          <p className="est__text">Info :3</p>
+          <p className="est__text">
+            <span className="est__text__negrita">Ciudad:</span> {est?.city}
+          </p>
+          <p className="est__text">
+            <span className="est__text__negrita">Dirección:</span>{" "}
+            {est?.address}
+          </p>
+          <p className="est__text">
+            <span className="est__text__negrita">Tipo de Establecimiento:</span>{" "}
+            {est?.type}
+          </p>
+          <p className="est__text">
+            <span className="est__text__negrita">Hora Apertura:</span>{" "}
+            {est?.Opening}
+          </p>
+          <p className="est__text">
+            <span className="est__text__negrita">Hora de Cierre:</span>{" "}
+            {est?.Closing}
+          </p>
+          <p className="est__text">
+            <span className="est__text__negrita">Numero Telefónico:</span>{" "}
+            {est?.telephone_number}
+          </p>
         </div>
         <div className="est__est">
           <h3 className="est_subtittle cursive"> Estadisticas</h3>

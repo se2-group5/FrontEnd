@@ -41,7 +41,17 @@
   text-align: left;
   margin: 0 auto;
   padding-top: 30px;
-  padding-bottom: 30px;
+}
+
+.est__information {
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+.est__text__negrita {
+  font-weight: bold;
 }
 
 .est__est {
@@ -66,7 +76,7 @@
   font-size: 2rem;
 }
 
-.est__button {
+.rep__button {
   font-size: 1.3rem;
   text-decoration: none;
   background: none;
@@ -81,7 +91,7 @@
   margin-top: 20px;
 }
 
-.est__button:hover {
+.rep__button:hover {
   color: #ff7261;
   transition: 250ms;
   cursor: pointer;
