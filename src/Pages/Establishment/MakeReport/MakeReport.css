@@ -1,0 +1,48 @@
+.makeReport {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.make__tittle {
+  font-family: "Montez", cursive;
+  font-size: 2rem;
+}
+
+.make__form__container {
+  margin: 30px;
+}
+
+.make__form {
+  width: 100%;
+}
+
+.make__input {
+  width: 70%;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 5rem;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.make__btn {
+  width: 50%;
+  height: 35px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: white;
+  border-radius: 5px;
+  background-color: black;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.make__btn:hover {
+  color: #ff7261;
+}
+
+.make__text__area {
+  height: 100px;
+}

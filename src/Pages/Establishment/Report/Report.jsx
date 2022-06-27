@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import MakeReport from "../MakeReport/MakeReport";
 import axios from "axios";
 import "./Report.css";
 
@@ -7,6 +8,7 @@ function Report() {
   const { id } = useParams();
   const baseURL = "http://localhost:8000/api/reports";
   const [reports, setReports] = useState([]);
+  const [makeRep, setMakerep] = useState(false);
 
   const data = async () => {
     await axios
@@ -25,6 +27,10 @@ function Report() {
       });
   };
 
+  const makeReport = () => {
+    setMakerep(true);
+  };
+
   useEffect(() => {
     data();
   }, []);
@@ -32,7 +38,7 @@ function Report() {
   return (
     <div className="report">
       {reports?.map((rep) => (
-        <div className="report__container">
+        <div key={rep.id} className="report__container">
           <hr />
           <div className="report__info">
             <div className="rep__item">
@@ -61,7 +67,18 @@ function Report() {
           <hr />
         </div>
       ))}
-      <button className="rep__button">¡ Realizar un Reporte !</button>
+      {makeRep ? (
+        <MakeReport />
+      ) : (
+        <button
+          className="rep__button"
+          onClick={() => {
+            makeReport();
+          }}
+        >
+          ¡ Realizar un Reporte !
+        </button>
+      )}
     </div>
   );
 }
