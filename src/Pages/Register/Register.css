@@ -1,6 +1,12 @@
 .register {
   height: 100vh;
   padding-top: 70px;
+  background: rgb(255, 114, 97);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 114, 97, 1) 20%,
+    rgba(183, 200, 203, 1) 75%
+  );
 }
 
 .register__container {

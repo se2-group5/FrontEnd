@@ -18,9 +18,20 @@ function Establishment() {
   const baseURL = `http://localhost:8000/api/businesses/${id}`;
 
   const data = async () => {
-    await axios.get(baseURL).then((response) => {
-      setEst(response.data);
-    });
+    await axios
+      .get(baseURL)
+      .then((response) => {
+        setEst(response.data);
+      })
+      .catch((error) => {
+        return error.response.data;
+      })
+      .then((error) => {
+        if (error.detail === "Not found.") {
+          console.log(error.detail);
+          window.location.href = "/NotFound";
+        }
+      });
   };
 
   useEffect(() => {

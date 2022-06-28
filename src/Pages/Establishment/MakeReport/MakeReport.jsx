@@ -36,9 +36,13 @@ function MakeReport() {
         business_id: parseInt(id),
         user_id: cookies.get("id"),
       },
-    }).then(() => {
-      window.location.href = `/establishment/${id}`;
-    });
+    })
+      .then(() => {
+        window.location.href = `/establishment/${id}`;
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   const [rating_business, setRating_business] = useState("");
