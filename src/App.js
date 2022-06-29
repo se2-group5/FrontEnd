@@ -4,6 +4,7 @@ import Login from "./Pages/Login/Login";
 import Establishments from "./Pages/Establishments/Establishments";
 import Establishment from "./Pages/Establishment/Establishment";
 import Register from "./Pages/Register/Register";
+import AboutUs from "./Pages/AboutUs/AboutUs";
 import NotFound from "./Pages/NotFound/NotFound";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
@@ -21,6 +22,7 @@ function App() {
           <Route extct path="/establishments" element={<Establishments />} />
           <Route exact path="/establishment/:id" element={<Establishment />} />
           <Route exact path="/signup" element={<Register />} />
+          <Route exact path="/aboutus" element={<AboutUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
