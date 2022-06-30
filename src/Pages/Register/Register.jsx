@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import md5 from "md5";
 import Cookies from "universal-cookie";
 
-const baseURL = "http://localhost:8000/api/users/";
+const baseURL = "https://backenddig.herokuapp.com/api/users/";
 const cookies = new Cookies();
 
 function Register() {

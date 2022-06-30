@@ -4,7 +4,7 @@ import axios from "axios";
 import img1 from "../../assets/images/image9.jpg";
 import "./Establishments.css";
 
-const baseURL = "http://localhost:8000/api/businesses";
+const baseURL = "https://backenddig.herokuapp.com/api/businesses/";
 
 function Establisments() {
   const [establishments, setEstablishments] = useState();
