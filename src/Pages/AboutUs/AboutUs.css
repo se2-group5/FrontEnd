@@ -1,0 +1,46 @@
+.aboutus {
+  height: 100%;
+  padding-top: 70px;
+  background: rgb(5, 127, 141);
+  background: linear-gradient(
+    336deg,
+    rgba(5, 127, 141, 1) 18%,
+    rgba(183, 200, 203, 1) 49%,
+    rgba(255, 114, 97, 1) 100%
+  );
+  padding-bottom: 40px;
+}
+
+.aboutus__container {
+  width: 70%;
+  border: solid black;
+  border-radius: 5px;
+  margin: 30px auto;
+}
+
+.aboutus__tittle {
+  text-align: center;
+  font-family: "Montez", cursive;
+  font-size: 4rem;
+}
+
+.content {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.content__p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutus__container {
+    width: 90%;
+  }
+  .aboutus__tittle {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+}

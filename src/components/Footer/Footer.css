@@ -17,10 +17,6 @@
   vertical-align: middle;
 }
 
-.footer__container2 {
-  display: none;
-}
-
 .footer__logo {
   font-family: "Montez", cursive;
   font-size: 1 rem;
@@ -58,6 +54,16 @@
   cursor: pointer;
 }
 
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__text {
+  color: white;
+  line-height: 45px;
+}
+
 @media screen and (max-width: 992px) {
   .footer__logo {
     font-size: 1rem;
@@ -66,11 +72,6 @@
   .footer__link {
     font-size: 1rem;
   }
-}
-
-.footer__social {
-  display: flex;
-  justify-content: space-between;
 }
 
 .footer__icon {
@@ -88,6 +89,7 @@
   }
 
   .footer__container {
+    padding-top: 20px;
     flex-direction: column;
   }
 
