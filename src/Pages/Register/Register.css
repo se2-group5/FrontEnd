@@ -1,6 +1,7 @@
 .register {
   height: 100vh;
   padding-top: 70px;
+  padding-bottom: 70px;
   background: rgb(255, 114, 97);
   background: linear-gradient(
     90deg,

@@ -7,6 +7,7 @@ import Register from "./Pages/Register/Register";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import NotFound from "./Pages/NotFound/NotFound";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
       </div>
       <div className="header">
         <Navbar />
+      </div>
+      <div className="footer">
+        <Footer />
       </div>
     </div>
   );

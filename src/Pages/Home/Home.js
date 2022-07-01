@@ -20,8 +20,8 @@ function Home() {
       <div className="slider__section2">
         <Slider
           imageSrc={img2}
-          tittle="Cafes"
-          subtittle="¡Cafes de tu agrado!"
+          tittle="Cafés"
+          subtittle="¡Cafés de tu agrado!"
           flipped={true}
         />
       </div>
