@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
 import "./Login.css";
-import { FcGoogle } from "react-icons/fc";
-import { BsFacebook } from "react-icons/bs";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import md5 from "md5";
 import Cookies from "universal-cookie";
+import { Link } from "react-router-dom";
 
 const baseURL = "https://backenddig.herokuapp.com/api/users/1/login";
 const cookies = new Cookies();
@@ -100,7 +99,10 @@ function Login() {
               Login
             </button>
             <p>
-              ¿No te has registrado? <span className="span">Registrarse</span>
+              ¿No te has registrado?{" "}
+              <Link to="/signup" className="span">
+                Registrarse
+              </Link>
             </p>
           </form>
         </div>

@@ -4,6 +4,7 @@ import "./Register.css";
 import { useForm } from "react-hook-form";
 import md5 from "md5";
 import Cookies from "universal-cookie";
+import { Link } from "react-router-dom";
 
 const baseURL = "https://backenddig.herokuapp.com/api/users/";
 const cookies = new Cookies();
@@ -145,7 +146,10 @@ function Register() {
               Registrarse
             </button>
             <p>
-              ¿Ya tienes un usuario? <span className="span">Ingresar</span>
+              ¿Ya tienes un usuario?{" "}
+              <Link to="/login" className="span">
+                Ingresar
+              </Link>
             </p>
           </form>
         </div>

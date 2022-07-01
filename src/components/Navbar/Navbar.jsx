@@ -32,7 +32,13 @@ function Navbar() {
   return (
     <div className="navbar">
       <nav className="navbar__container">
-        <Link className="navbar__logo" to="/">
+        <Link
+          className="navbar__logo"
+          to="/"
+          onClick={() => {
+            setMenuactive(false);
+          }}
+        >
           DIG APP
         </Link>
         <ul
@@ -43,17 +49,35 @@ function Navbar() {
           {!cookies.get("name") ? (
             <>
               <li className="navbar__item">
-                <Link className="navbar__link" to="/establishments">
+                <Link
+                  className="navbar__link"
+                  to="/establishments"
+                  onClick={() => {
+                    setMenuactive(false);
+                  }}
+                >
                   Establecimientos
                 </Link>
               </li>
               <li className="navbar__item">
-                <Link className="navbar__link" to="/login">
+                <Link
+                  className="navbar__link"
+                  to="/login"
+                  onClick={() => {
+                    setMenuactive(false);
+                  }}
+                >
                   Ingresar
                 </Link>
               </li>
               <li className="navbar__item">
-                <Link className="navbar__link" to="/signup">
+                <Link
+                  className="navbar__link"
+                  to="/signup"
+                  onClick={() => {
+                    setMenuactive(false);
+                  }}
+                >
                   Registrarse
                 </Link>
               </li>
@@ -61,7 +85,24 @@ function Navbar() {
           ) : (
             <>
               <li className="navbar__item">
-                <Link className="navbar__link" to="/establishments">
+                <Link
+                  className="navbar__link"
+                  to="/establishments"
+                  onClick={() => {
+                    setMenuactive(false);
+                  }}
+                >
+                  Establecimientos
+                </Link>
+              </li>
+              <li className="navbar__item">
+                <Link
+                  className="navbar__link"
+                  to="/establishments"
+                  onClick={() => {
+                    setMenuactive(false);
+                  }}
+                >
                   {cookies.get("name")}
                 </Link>
               </li>
@@ -69,6 +110,7 @@ function Navbar() {
                 <span
                   onClick={() => {
                     closeSesion();
+                    setMenuactive(false);
                   }}
                   className="navbar__link"
                 >

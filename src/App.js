@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
@@ -29,9 +30,9 @@ function App() {
       <div className="header">
         <Navbar />
       </div>
-      {/*  <div className="footer">
+      <div className="footer">
         <Footer />
-      </div> */}
+      </div>
     </div>
   );
 }

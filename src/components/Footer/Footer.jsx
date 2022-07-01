@@ -2,9 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-
 
 function Footer() {
   const [menuActive, setMenuactive] = useState(false);
@@ -22,36 +19,29 @@ function Footer() {
 
   return (
     <div className="footer">
-        <nav className="footer__container">
-            <h3 className="footer__logo">
-                © Copyright 2022
-            </h3>
-            <ul className="footer__list">
-                <li className="footer__item">
-                    <Link className="footer__link" to="/aboutus">
-                        Acerca de Nosotros
-                    </Link>
-                </li>
-                <li className="footer__item">
-                    <Link className="footer__link" to="/NotFound">
-                        Redes Sociales
-                    </Link>
-                </li>
-                <li className="footer__item">
-                    <Link className="footer__link" to="/donations">
-                        Donaciones
-                    </Link>
-                </li>
-            </ul>
-            <button 
-              className="footer__toggle"
-              onClick={() => {
-                isActive();
-              }}
-            >
-              <FontAwesomeIcon icon={faBars} className="footer__menu" />
-            </button>
-        </nav>
+      <div className="footer__container">
+        <h3 className="footer__logo">© Copyright 2022</h3>
+        <ul className="footer__list">
+          <li className="footer__item">
+            <Link className="footer__link" to="/aboutus">
+              Acerca de Nosotros
+            </Link>
+          </li>
+          <li className="footer__item">
+            <Link className="footer__link" to="/NotFound">
+              Redes Sociales
+            </Link>
+          </li>
+          <li className="footer__item">
+            <Link className="footer__link" to="/donations">
+              Donaciones
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <div className="footer__container2">
+        <h3 className="footer__logo__2">DIG APP</h3>
+      </div>
     </div>
   );
 }

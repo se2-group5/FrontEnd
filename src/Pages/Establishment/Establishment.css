@@ -1,6 +1,7 @@
 .establishment {
+  position: relative;
   height: 100%;
-  padding-top: 70px;
+  padding-top: 100px;
   padding-bottom: 100px;
   background: rgb(5, 127, 141);
   background: linear-gradient(
@@ -91,17 +92,25 @@
   margin-top: 20px;
 }
 
-.rep__button:hover {
+.est__link {
+  text-decoration: none;
+  color: black;
+}
+
+.est__ses:hover {
   color: #ff7261;
   transition: 250ms;
   cursor: pointer;
 }
-
 .est__img {
   border-radius: 5px;
 }
 
 @media screen and (max-width: 992px) {
+  .establishment {
+    padding-top: 80px;
+  }
+
   .est__tittle {
     width: 100%;
     font-size: 3rem;

@@ -99,8 +99,10 @@ function Establishment() {
           {outVisible ? (
             <Report />
           ) : (
-            <Link className="est__button" to="/login">
-              ¡ Inicie sesion para realizar un reporte !
+            <Link className="est__button est__link" to="/login">
+              ¡{" "}
+              <span className="est__text__negrita est__ses">Inicie sesion</span>{" "}
+              para realizar un reporte !
             </Link>
           )}
         </div>
