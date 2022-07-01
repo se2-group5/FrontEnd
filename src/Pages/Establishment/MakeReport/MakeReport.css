@@ -10,15 +10,19 @@
 }
 
 .make__form__container {
-  margin: 30px;
+  width: 100%;
+  margin: auto;
 }
 
 .make__form {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .make__input {
   width: 70%;
+  margin: auto;
   height: 35px;
   border: none;
   border-radius: 5px;
@@ -45,6 +49,10 @@
 
 .make__text__area {
   height: 100px;
+}
+
+.make__text {
+  margin-top: 5px;
 }
 
 @media screen and (max-width: 768px) {
