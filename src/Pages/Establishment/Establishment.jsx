@@ -50,7 +50,7 @@ function Establishment() {
   return (
     <div className="establishment">
       <div className="est__container">
-        <img src={img1} className="est__img" alt="cover-img" />
+        <img src={est?.cover_picture} className="est__img" alt="cover-img" />
         <h1 className="est__tittle"> {est?.name} </h1>
         <div className="est__desc">
           <h3 className="est__subtittle  cursive">Descripción</h3>
