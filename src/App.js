@@ -11,7 +11,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="">
+    <div className="app">
       <div className="body">
         <Routes>
           <Route exact path="/" element={<Home />} />

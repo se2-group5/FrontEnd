@@ -1,16 +1,11 @@
 .home {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   font-family: "Montez", cursive;
 }
 
 .slider__section1 {
-  padding: 5rem;
   background-color: #b7c8cb;
 }
 
 .slider__section2 {
-  padding: 5rem;
   background-color: #ff7261;
 }

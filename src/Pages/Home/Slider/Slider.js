@@ -6,7 +6,9 @@ function Slider({ imageSrc, tittle, subtittle, flipped }) {
     if (!flipped) {
       return (
         <>
-          <img src={imageSrc} alt="coworking" className="slider__image" />
+          <div className="slider__img">
+            <img src={imageSrc} alt="coworking" className="slider__image" />
+          </div>
           <div className="slider__content">
             <h1 className="slider__tittle">{tittle}</h1>
             <p className="slider__subtittle">{subtittle}</p>
@@ -16,11 +18,13 @@ function Slider({ imageSrc, tittle, subtittle, flipped }) {
     } else {
       return (
         <>
-          <div className="slider__content">
+          <div className="slider__img">
             <h1 className="slider__tittle">{tittle}</h1>
             <p className="slider__subtittle">{subtittle}</p>
           </div>
-          <img src={imageSrc} alt="coworking" className="slider__image" />
+          <div className="slider__content">
+            <img src={imageSrc} alt="coworking" className="slider__image" />
+          </div>
         </>
       );
     }
