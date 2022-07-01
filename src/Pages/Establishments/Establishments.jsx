@@ -37,7 +37,7 @@ function Establisments() {
             <Card
               id={est.id}
               name={est.name}
-              img={img1}
+              img={est.cover_picture}
               desc={est.description}
             />
           </div>
