@@ -6,7 +6,7 @@ import "./Report.css";
 
 function Report() {
   const { id } = useParams();
-  const baseURL = "http://localhost:8000/api/reports";
+  const baseURL = "https://backenddig.herokuapp.com/api/reports";
   const [reports, setReports] = useState([]);
   const [makeRep, setMakerep] = useState(false);
 

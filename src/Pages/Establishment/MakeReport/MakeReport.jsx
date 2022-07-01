@@ -6,7 +6,7 @@ import Cookies from "universal-cookie";
 import "./MakeReport.css";
 
 const cookies = new Cookies();
-const baseURL = "http://localhost:8000/api/reports/";
+const baseURL = "https://backenddig.herokuapp.com/api/reports/";
 
 function MakeReport() {
   const { id } = useParams();

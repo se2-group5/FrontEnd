@@ -15,7 +15,7 @@ function Establishment() {
   const [outVisible, setOutvisible] = useState(false);
   const [est, setEst] = useState();
 
-  const baseURL = `http://localhost:8000/api/businesses/${id}`;
+  const baseURL = `https://backenddig.herokuapp.com/api/businesses/${id}`;
 
   const data = async () => {
     await axios
