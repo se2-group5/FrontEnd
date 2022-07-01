@@ -61,6 +61,7 @@
 .navbar__toggle {
   background-color: black;
   display: none;
+  border: none;
 }
 
 .navbar__menu {
