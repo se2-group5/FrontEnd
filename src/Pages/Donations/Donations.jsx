@@ -10,8 +10,7 @@ function Donations() {
         <h3 className="donations__tittle">Paypal</h3>
         <PayPalScriptProvider
           options={{
-            "client-id":
-              "AXWeAeYZrShRCxWc-nN7ALffNw9p75KvKnfC1AlZ37Db5OICHKWC61kPoVCcc6bqteqg3zwKPJXckt2p",
+            "client-id": process.env.DIG_APP_PAYPAL_CLIENT_ID,
           }}
         >
           <PayPalButtons
@@ -25,6 +24,7 @@ function Donations() {
         <h3 className="donations__tittle">Vaki</h3>
         <div className="content">
           <iframe
+            className="donate__button"
             id="vakiIframe"
             title="Donación Proyecto DIG App"
             width="350"
