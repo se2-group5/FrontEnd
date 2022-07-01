@@ -70,7 +70,7 @@
   }
 
   .footer__link {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -93,13 +93,6 @@
     flex-direction: column;
   }
 
-  .footer__container2 {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-
   .footer__logo {
     font-size: 1.3rem;
     margin: 20px auto;
@@ -109,5 +102,9 @@
     padding: 0;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .footer__item {
+    margin-top: 10px;
   }
 }
