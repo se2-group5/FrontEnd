@@ -11,10 +11,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
-      <div className="header">
-        <Navbar />
-      </div>
+    <div className="">
       <div className="body">
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -25,6 +22,9 @@ function App() {
           <Route exact path="/aboutus" element={<AboutUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+      </div>
+      <div className="header">
+        <Navbar />
       </div>
     </div>
   );

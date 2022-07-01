@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,13 +15,31 @@ const closeSesion = () => {
 };
 
 function Navbar() {
+  const [menuActive, setMenuactive] = useState(false);
+
+  const isActive = () => {
+    if (menuActive) {
+      setMenuactive(false);
+    } else {
+      setMenuactive(true);
+    }
+  };
+
+  useEffect(() => {
+    setMenuactive(false);
+  }, []);
+
   return (
-    <div className="navbar__container">
-      <nav className="navbar">
+    <div className="navbar">
+      <nav className="navbar__container">
         <Link className="navbar__logo" to="/">
           DIG APP
         </Link>
-        <ul className="navbar__list">
+        <ul
+          className={
+            menuActive ? "navbar__list" : "navbar__list navbar__list__hide"
+          }
+        >
           {!cookies.get("name") ? (
             <>
               <li className="navbar__item">
@@ -59,7 +78,12 @@ function Navbar() {
             </>
           )}
         </ul>
-        <button className="navbar__toggle">
+        <button
+          className="navbar__toggle"
+          onClick={() => {
+            isActive();
+          }}
+        >
           <FontAwesomeIcon icon={faBars} className="navbar__menu" />
         </button>
       </nav>

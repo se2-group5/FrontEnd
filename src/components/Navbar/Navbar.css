@@ -1,75 +1,106 @@
-.navbar__container {
-  position: static;
-  top: 0px;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 60px;
   background-color: black;
-  opacity: 0.85;
+  opacity: 0.9;
   box-sizing: border-box;
 }
 
-.navbar {
+.navbar__container {
+  margin: 0 5rem;
+  height: 100%;
   display: flex;
   justify-content: space-between;
-  width: 992px;
-  margin: 0 auto;
+  align-items: center;
+  vertical-align: middle;
 }
 
 .navbar__logo {
-  padding-left: 2.5rem;
-  color: white;
-  font-weight: bold;
-  font-family: "Bad Script", cursive;
-  font-size: 1.5rem;
+  font-family: "Montez", cursive;
+  font-size: 2rem;
+}
+
+.navbar__logo {
   text-decoration: none;
-  line-height: 60px;
+  color: white;
 }
 
 .navbar__logo:hover {
   color: #ff7261;
-}
-
-.navbar__toggle {
-  background-color: black;
-}
-
-.navbar__menu {
-  color: white;
-}
-
-.navbar__list {
-  display: flex;
-  list-style: none;
-  padding-right: 2.5rem;
-}
-
-.navbar__item {
-  white-space: nowrap;
-}
-
-.navbar__link {
-  font-size: 1.3rem;
-  text-decoration: none;
-  background: none;
-  border: none;
-  color: white;
-  font-weight: bold;
-
-  text-align: center;
-  padding: 10;
-  margin: 0px 5px;
-  border-style: solid;
-  border-width: 0px 0px 1px 0px;
-  border-color: transparent;
-  transition: 250ms;
-}
-
-.navbar__link:hover {
-  color: #ff7261;
-  border-color: #ff7261;
   transition: 250ms;
   cursor: pointer;
 }
 
-/* Salmón Saturado  #ff7261 */
-/* Inverso          #057f8d */
-/* Segundario       #b7c8cb */
+.navbar__list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  list-style: none;
+}
+
+.navbar__item {
+  margin: 0 10px;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.navbar__link:hover {
+  color: #ff7261;
+  transition: 250ms;
+  cursor: pointer;
+}
+
+.navbar__toggle {
+  background-color: black;
+  display: none;
+}
+
+.navbar__menu {
+  font-size: 1.3rem;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 50px;
+  }
+
+  .navbar__logo {
+    font-size: 1.5rem;
+  }
+
+  .navbar__list {
+    background-color: black;
+    opacity: 0.9;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    margin-top: 0;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .navbar__list__hide {
+    left: 100%;
+  }
+
+  .navbar__item {
+    margin: 10px 0;
+  }
+
+  .navbar__link {
+    font-size: 1rem;
+  }
+
+  .navbar__toggle {
+    display: block;
+  }
+}
