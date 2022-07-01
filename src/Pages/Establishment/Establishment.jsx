@@ -15,6 +15,7 @@ function Establishment() {
   const { id } = useParams();
 
   const baseURL = `https://backenddig.herokuapp.com/api/businesses/${id}`;
+
   const data = async () => {
     await axios
       .get(baseURL)
@@ -25,7 +26,7 @@ function Establishment() {
         return error.response.data;
       })
       .then((error) => {
-        if (error.detail === "Not found.") {
+        if (error?.detail === "Not found.") {
           console.log(error.detail);
           window.location.href = "/NotFound";
         }
