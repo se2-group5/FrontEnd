@@ -10,6 +10,7 @@ import NotFound from "./Pages/NotFound/NotFound";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Donations from "./Pages/Donations/Donations";
+import Faqs from "./Pages/FAQs/Faqs";
 import "./App.css";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/signup" element={<Register />} />
           <Route exact path="/aboutus" element={<AboutUs />} />
           <Route exact path="/donations" element={<Donations />} />
+          <Route exact path="/faqs" element={<Faqs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

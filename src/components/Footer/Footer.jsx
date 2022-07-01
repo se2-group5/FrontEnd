@@ -39,7 +39,11 @@ function Footer() {
               Donaciones
             </Link>
           </li>
-          <li className="footer__item"></li>
+          <li className="footer__item">
+            <Link className="footer__link" to="/faqs">
+              FAQ's
+            </Link>
+          </li>
         </ul>
         <h3 className="footer__logo">© DIG APP</h3>
       </div>
