@@ -54,17 +54,7 @@ function Login() {
       <div className="login__container">
         <div className="login__info__container">
           <h1 className="tittle">Ingresar con</h1>
-          <div className="social__login">
-            <div className="social__login__element">
-              <FcGoogle className="social__image" />
-              <span>Google</span>
-            </div>
-            <div className="social__login__element">
-              <BsFacebook className="social__image" />
-              <span>Facebook</span>
-            </div>
-          </div>
-          <p>or</p>
+
           <form className="inputs__container" onSubmit={handleSubmit(onSubmit)}>
             <input
               className="input"

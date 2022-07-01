@@ -46,3 +46,9 @@
 .make__text__area {
   height: 100px;
 }
+
+@media screen and (max-width: 768px) {
+  .make__input {
+    width: 95%;
+  }
+}
