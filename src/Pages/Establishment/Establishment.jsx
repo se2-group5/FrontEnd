@@ -4,19 +4,17 @@ import { Link } from "react-router-dom";
 import Statistics from "./Statistics/Statistics";
 import Report from "./Report/Report";
 import Cookies from "universal-cookie";
-import "./Establishment.css";
 import axios from "axios";
-import img1 from "../../assets/images/image9.jpg";
+import "./Establishment.css";
 
 const cookies = new Cookies();
 
 function Establishment() {
-  const { id } = useParams();
   const [outVisible, setOutvisible] = useState(false);
   const [est, setEst] = useState();
+  const { id } = useParams();
 
   const baseURL = `https://backenddig.herokuapp.com/api/businesses/${id}`;
-
   const data = async () => {
     await axios
       .get(baseURL)

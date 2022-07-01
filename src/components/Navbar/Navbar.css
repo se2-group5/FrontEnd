@@ -22,6 +22,7 @@
 .navbar__logo {
   font-family: "Montez", cursive;
   font-size: 2rem;
+  border: none;
 }
 
 .navbar__logo {

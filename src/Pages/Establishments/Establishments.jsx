@@ -3,9 +3,8 @@ import Card from "./Card/Card";
 import axios from "axios";
 import "./Establishments.css";
 
-const baseURL = "https://backenddig.herokuapp.com/api/businesses/";
-
 function Establisments() {
+  const baseURL = "https://backenddig.herokuapp.com/api/businesses/";
   const [establishments, setEstablishments] = useState();
 
   const getStablishments = async () => {
