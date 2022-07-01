@@ -23,7 +23,7 @@
 
 .footer__logo {
   font-family: "Montez", cursive;
-  font-size: 2rem;
+  font-size: 1 rem;
   text-decoration: none;
   color: white;
 }
@@ -66,6 +66,20 @@
   .footer__link {
     font-size: 1rem;
   }
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__icon {
+  margin: 10px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
