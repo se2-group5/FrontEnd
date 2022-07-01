@@ -36,12 +36,9 @@ img {
     max-width: 80%;
   }
 }
-@media screen and (max-width: 992px) {
-}
+
 @media screen and (max-width: 768px) {
   .card__container {
     height: 450px;
   }
-}
-@media screen and (max-width: 576px) {
 }

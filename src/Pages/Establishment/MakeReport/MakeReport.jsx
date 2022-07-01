@@ -12,18 +12,6 @@ function MakeReport() {
   const { id } = useParams();
 
   const postReport = async () => {
-    /*    const report = [
-      {
-        rating_business,
-        internet_status,
-        occupation_status,
-        comments,
-        report_support: 0,
-        business_id: parseInt(id),
-        user_id: cookies.get("id"),
-      },
-    ]; */
-
     axios({
       method: "post",
       url: baseURL,
