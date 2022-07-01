@@ -1,6 +1,6 @@
 .establishment {
   height: 100%;
-  padding-top: 125px;
+  padding-top: 70px;
   padding-bottom: 100px;
   background: rgb(5, 127, 141);
   background: linear-gradient(
@@ -95,4 +95,40 @@
   color: #ff7261;
   transition: 250ms;
   cursor: pointer;
+}
+
+.est__img {
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 992px) {
+  .est__tittle {
+    width: 100%;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .est__tittle {
+    font-size: 2rem;
+  }
+  .est__desc {
+    width: 95%;
+    padding: 5px;
+  }
+
+  .est__information {
+    width: 100%;
+  }
+
+  .est__est {
+    width: 100%;
+  }
+
+  .est__rep {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
 }

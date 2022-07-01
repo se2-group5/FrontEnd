@@ -36,3 +36,28 @@ hr {
   transition: 250ms;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1200px) {
+  .report__container {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .report__container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .report__info {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .report__container {
+    width: 80%;
+    margin: auto;
+  }
+}
