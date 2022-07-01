@@ -12,10 +12,13 @@
 .slider__img {
   grid-column: 1;
   margin: auto;
-  width: 90%;
   border: solid black;
   border-radius: 5px;
   padding: 5px;
+}
+
+.slider__image {
+  width: 100%;
 }
 
 .slider__content {
@@ -63,14 +66,10 @@
 }
 @media screen and (max-width: 768px) {
   .slider {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  .slider__img {
-    width: 80%;
   }
 
   .slider__tittle {
@@ -85,6 +84,6 @@
 
 @media screen and (max-width: 576px) {
   .slider {
-    height: 70vh;
+    height: 80vh;
   }
 }

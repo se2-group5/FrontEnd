@@ -19,11 +19,11 @@ function Slider({ imageSrc, tittle, subtittle, flipped }) {
       return (
         <>
           <div className="slider__img">
-            <h1 className="slider__tittle">{tittle}</h1>
-            <p className="slider__subtittle">{subtittle}</p>
+            <img src={imageSrc} alt="coworking" className="slider__image" />
           </div>
           <div className="slider__content">
-            <img src={imageSrc} alt="coworking" className="slider__image" />
+            <h1 className="slider__tittle">{tittle}</h1>
+            <p className="slider__subtittle">{subtittle}</p>
           </div>
         </>
       );
