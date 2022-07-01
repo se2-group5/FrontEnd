@@ -1,0 +1,40 @@
+.donations {
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: rgb(5, 127, 141);
+    background: linear-gradient(
+      336deg,
+      rgba(5, 127, 141, 1) 18%,
+      rgba(183, 200, 203, 1) 49%,
+      rgba(255, 114, 97, 1) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+  
+.donations__tittle {
+    font-size: 4rem;
+    font-family: "Montez", cursive;
+    text-align: center;
+}
+  
+.donations__container {
+    width: 25%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.card {
+    max-width: 70%;
+    padding: 10px;
+    padding-bottom: 40px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
