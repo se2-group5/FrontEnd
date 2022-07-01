@@ -20,7 +20,7 @@
 }
 
 .card {
-  max-width: 70%;
+  max-width: 85%;
   padding: 10px;
   padding-bottom: 40px;
   margin: auto;
@@ -28,11 +28,20 @@
   grid-template-columns: 33% 33% 33%;
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
+  .card {
+    grid-template-columns: 50% 50%;
+  }
 }
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .card {
+    grid-template-columns: 100%;
+  }
 }
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
+  .ests__tittle {
+    font-size: 2.5rem;
+  }
 }
