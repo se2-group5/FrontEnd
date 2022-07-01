@@ -27,9 +27,9 @@ function App() {
       <div className="header">
         <Navbar />
       </div>
-      <div className="footer">
+      {/*  <div className="footer">
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }
