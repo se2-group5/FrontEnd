@@ -1,4 +1,5 @@
 import React from "react";
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import "./Donations.css";
 
 function Donations() {
@@ -6,39 +7,31 @@ function Donations() {
     <div className="donations">
       <h1 className="donations__tittle">Donaciones</h1>
       <div className="donations__container">
-        <h3 className="donations__tittle">Vaki</h3>
-        <iframe
-          id="vakiIframe"
-          title="Donación Proyecto DIG App"
-          width="350"
-          height="415"
-          src="https://vaki.co/iframe/Yx0lz0BjUtA27dczNOX5"
-        ></iframe>
-      </div>
-      <div className="donations__containter">
-        <h3 className="donations__titte">Paypal</h3>
-        <form
-          action="https://www.paypal.com/donate"
-          method="post"
-          target="_top"
+        <h3 className="donations__tittle">Paypal</h3>
+        <PayPalScriptProvider
+          options={{
+            "client-id":
+              "AXWeAeYZrShRCxWc-nN7ALffNw9p75KvKnfC1AlZ37Db5OICHKWC61kPoVCcc6bqteqg3zwKPJXckt2p",
+          }}
         >
-          <input type="hidden" name="hosted_button_id" value="3F6NLJKLA5NGA" />
-          <input
-            type="image"
-            src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-            border="0"
-            name="submit"
-            title="PayPal - The safer, easier way to pay online!"
-            alt="Donate with PayPal button"
+          <PayPalButtons
+            style={{ layout: "horizontal" }}
+            className="donate__button"
           />
-          <img
-            alt=""
-            border="0"
-            src="https://www.paypal.com/en_CO/i/scr/pixel.gif"
-            width="10"
-            height="10"
-          />
-        </form>
+        </PayPalScriptProvider>
+      </div>
+
+      <div className="donations__container">
+        <h3 className="donations__tittle">Vaki</h3>
+        <div className="content">
+          <iframe
+            id="vakiIframe"
+            title="Donación Proyecto DIG App"
+            width="350"
+            height="415"
+            src="https://vaki.co/iframe/Yx0lz0BjUtA27dczNOX5"
+          ></iframe>
+        </div>
       </div>
     </div>
   );

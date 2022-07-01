@@ -17,6 +17,7 @@ function Establishment() {
   const baseURL = `https://backenddig.herokuapp.com/api/businesses/${id}`;
 
   const data = async () => {
+    console.log("Recarga");
     await axios
       .get(baseURL)
       .then((response) => {

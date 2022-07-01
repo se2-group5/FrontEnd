@@ -15,10 +15,15 @@ function Footer() {
             href="https://web.facebook.com/DIG-APP-105427112229134"
             target="_blank"
             className="footer__icon"
+            rel="noreferrer"
           >
             <FaFacebookF className="icon" />
           </a>
-          <a href="https://www.instagram.com/dig_app/" className="footer__icon">
+          <a
+            href="https://www.instagram.com/dig_app/"
+            className="footer__icon"
+            rel="noreferrer"
+          >
             <FaInstagram className="icon" />
           </a>
         </div>
