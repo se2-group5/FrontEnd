@@ -5,9 +5,8 @@ function AboutUs() {
   return (
     <div className="aboutus">
       <div className="aboutus">
-        <div className="aboutus__container"></div>
-        <h1>Acerca de Nosotros</h1>
-        <div>
+        <h1 className="aboutus__tittle">Acerca de Nosotros</h1>
+        <div className="aboutus__container">
           <p>
             DIG nace cómo una iniciativa ante el aumento del teletrabajo y la creciente población de 
             nómadas digitales. DIG brinda información de lugares de coworking, ya bien puedan ser lugares como cafés con
@@ -16,18 +15,16 @@ function AboutUs() {
             los sitios que frecuentan en tiempo real para así poder brindar información más precisa, actualizada y oportuna. 
           </p>
         </div>
-        <div className="aboutus__container"></div>
-        <h3>Realiza una Donación</h3>
-        <div>
+        <div className="aboutus__container">
+          <h3>Financiamiento</h3>
           <p>
             DIG no cobra a los usuarios por el uso de la aplicación, ni a los establecimientos por aparecer en nuestra web.
             Para mantener esta iniciativa, fomentamos que nuestros usuarios puedan donar para así nosotros poder mantener y mejorar
             la aplicación. Con tus aportes ayudas a mantener nuestra comunidad activa y en expansión. 
           </p>
         </div>
-        <div className="aboutus__container"></div>
-        <h3>Información legal</h3>
-        <div>
+        <div className="aboutus__container">
+          <h3>Información legal</h3>
           <p>
             Toda la información suministrada, compartida y expuesta en medios presenciales, digitales, impresos son de uso exclusivo de DIG en cuanto a información propia de su plataforma.
             De acuerdo a la ley 44  de 1993 sobre los derechos de autor, todo el desarrollo realizado tanto material físico como virtual (software) están protegidos y patentados. Por ende el contenido de los repositorios de código fuente son de uso exclusivo de DIG y se prohibe a sus miembros o terceros la distribución u extracción total o parcial del código fuente, así como el uso de logo, paleta de color y patrones de diseño de la aplicación.

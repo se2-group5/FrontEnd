@@ -1,0 +1,32 @@
+.card__container {
+    width: 85%;
+    height: 400px;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .image__card {
+    padding: 3px;
+  }
+  
+  img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .card__desc {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .card__desc h3 {
+    margin-top: -1px;
+    font-size: 2rem;
+    font-family: "Montez", cursive;
+  }

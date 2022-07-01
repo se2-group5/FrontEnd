@@ -38,7 +38,7 @@ function Footer() {
                     </Link>
                 </li>
                 <li className="footer__item">
-                    <Link className="footer__link" to="/NotFound">
+                    <Link className="footer__link" to="/donations">
                         Donaciones
                     </Link>
                 </li>
