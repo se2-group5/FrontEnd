@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card/Card";
 import axios from "axios";
+import "./Establishments.css";
 
 function Establisments() {
   const baseURL = "https://backenddig.herokuapp.com/api/businesses/";
