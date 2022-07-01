@@ -56,14 +56,6 @@
   align-items: center;
 }
 
-.social__image {
-  width: 1.875rem;
-  height: 1.875rem;
-  position: relative;
-  top: 0;
-  left: -0.625rem;
-}
-
 .login__info__container > p {
   font-size: 1.25rem;
   margin-top: 1.5rem;
@@ -119,5 +111,11 @@
 @media screen and (max-width: 992px) {
   .login__container {
     width: 70%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .register__container {
+    width: 90%;
   }
 }

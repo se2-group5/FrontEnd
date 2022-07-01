@@ -1,7 +1,8 @@
 .register {
-  height: 100vh;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  position: relative;
+  height: 100%;
+  padding-top: 80px;
+  padding-bottom: 60px;
   background: rgb(255, 114, 97);
   background: linear-gradient(
     90deg,
@@ -13,9 +14,9 @@
 .register__container {
   border: solid black;
   border-radius: 5px;
-  height: 30em;
-  width: 30em;
-  margin: 6em auto;
+  width: 40%;
+  height: 70%;
+  margin: 2rem auto;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
@@ -46,7 +47,6 @@
 }
 
 .inputs__container {
-  padding-top: 2rem;
   height: 55%;
   width: 85%;
   display: flex;
@@ -60,6 +60,7 @@
   width: 90%;
   height: 3.125rem;
   font-size: 1em;
+  margin: 10px;
 }
 
 .input {
@@ -90,4 +91,13 @@
 
 .span {
   font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+  .register__container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 576px) {
 }
